@@ -8,7 +8,7 @@
 <body>
     <p>Rock Paper Scissors</p>
     <button onclick=" 
-        computerPickFunction();
+        const computerPick = computerPickFunction();
 
         let result = '';
         if(computerPick === 'rock'){
@@ -25,9 +25,9 @@
     ">Rock</button>
 
     <button onclick="
-        computerPickFunction();
+        computerPick = computerPickFunction();
 
-        let result = '';
+    
         if(computerPick === 'rock'){
            result = 'you win';
         } else if(computerPick === 'paper'){
@@ -43,10 +43,8 @@
 
     <button onclick="
 
-        computerPickFunction();
-        
+        computerPick = computerPickFunction();
 
-        let result = '';
         if(computerPick === 'rock'){
            result = 'you lost';
         } else if(computerPick === 'paper'){
@@ -62,11 +60,11 @@
     
 
     <script>
-        let computerPick = '';
+       
         function computerPickFunction(){
             const randomNumber = Math.random();
+            let computerPick = '';
            
-
             if(randomNumber >= 0 && randomNumber < 1/3){
             computerPick = 'rock';
             } else if (randomNumber >= 1/3 && randomNumber < 2/3){
@@ -74,6 +72,7 @@
             } else if (randomNumber >= 2/3 && randomNumber < 1){
                 computerPick = 'scissors';
             }
+            return computerPick;
         }
        
     </script>
