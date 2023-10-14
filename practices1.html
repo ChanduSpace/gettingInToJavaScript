@@ -31,8 +31,18 @@
         console.log('cart was reset');
         console.log(`Cart Quantity: ${cartQuantity}`);
     ">reset Cart</button>
+
+    <button onclick="
+        greet('chandu');
+        greet();
+        greet('dhoni');
+    ">greet</button>
+
     <script>
         let cartQuantity = 0;
+        function greet(name){
+            console.log(`hello ${name}`);
+        }
     </script>
 </body>
 </html>
