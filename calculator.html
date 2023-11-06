@@ -1,124 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>calculator</title>
     <style>
-        .butt{
-            margin: 4px;
-        }
-        .main-container{
-            display: inline-block;
-            background-color: darkgrey;
-            padding: 20px;
-            justify-content: center;
-            vertical-align: middle;
-            align-items: center;
-        }
-        .heading{
-            margin: 0px;
-            margin-left: 14px;
-            margin-bottom: 4px;
-        }
+      .butt {
+        margin: 4px;
+      }
+      .main-container {
+        display: inline-block;
+        background-color: darkgrey;
+        padding: 20px;
+        justify-content: center;
+        vertical-align: middle;
+        align-items: center;
+      }
+      .heading {
+        margin: 0px;
+        margin-left: 14px;
+        margin-bottom: 4px;
+      }
     </style>
-</head>
-<body style="padding: 30px;">
-    
+  </head>
+  <body style="padding: 30px">
     <div class="main-container">
-        <p class="heading">CALCULATOR</p>
-            <button class="butt" onclick="
+      <p class="heading">CALCULATOR</p>
+      <button
+        class="butt"
+        onclick="
             result = result + '1';
             console.log(result);
-            ">1</button>
+            "
+      >
+        1
+      </button>
 
-        <button class="butt" onclick="
+      <button
+        class="butt"
+        onclick="
             result = result +'2';
             console.log(result);
-        ">2</button>
+        "
+      >
+        2
+      </button>
 
-        <button class="butt" onclick="
+      <button
+        class="butt"
+        onclick="
             result = result +'3';
             console.log(result);
-        ">3</button>
-        
-        <button class="butt" style="height: 20.35px; width: 22.35px;"
+        "
+      >
+        3
+      </button>
+
+      <button
+        class="butt"
+        style="height: 20.35px; width: 22.35px"
         onclick="
             result = result +' + ';
             console.log(result);"
-        >+</button><br>
+      >
+        +</button
+      ><br />
 
-        <button class="butt" onclick="
+      <button
+        class="butt"
+        onclick="
             result = result +'4';
             console.log(result);"
-        >4</button>
+      >
+        4
+      </button>
 
-        <button class="butt" onclick="
+      <button
+        class="butt"
+        onclick="
             result = result +'5';
             console.log(result);"
-        >5</button>
+      >
+        5
+      </button>
 
-        <button class="butt" onclick="
+      <button
+        class="butt"
+        onclick="
             result = result +'6';
             console.log(result);"
-        >6</button>
+      >
+        6
+      </button>
 
-        <button class="butt" style="height: 20.35px; width: 22.35px;" onclick="
+      <button
+        class="butt"
+        style="height: 20.35px; width: 22.35px"
+        onclick="
             result = result +'-';
             console.log(result);
-        ">-</button><br>
+        "
+      >
+        -</button
+      ><br />
 
-        <button class="butt" onclick="
+      <button
+        class="butt"
+        onclick="
             result = result +'7';
             console.log(result);"
-        >7</button>
+      >
+        7
+      </button>
 
-        <button class="butt" onclick="
+      <button
+        class="butt"
+        onclick="
             result = result +'8';
             console.log(result);
-        ">8</button>
-        
-        <button class="butt" onclick="
+        "
+      >
+        8
+      </button>
+
+      <button
+        class="butt"
+        onclick="
             result = result +'9';
             console.log(result);
-        ">9</button>
-        
-        <button class="butt" style="height: 20.35px; width: 22.35px;" onclick="
+        "
+      >
+        9
+      </button>
+
+      <button
+        class="butt"
+        style="height: 20.35px; width: 22.35px"
+        onclick="
             result = result +'*';
             console.log(result);
-        ">*</button><br>
-        
-        <button class="butt" style="height: 20.35px; width: 22.35px;"
+        "
+      >
+        *</button
+      ><br />
+
+      <button
+        class="butt"
+        style="height: 20.35px; width: 22.35px"
         onclick="
             result = result +'.';
             console.log(result);
-        ">.</button>
-        
-        <button class="butt" onclick="
+        "
+      >
+        .
+      </button>
+
+      <button
+        class="butt"
+        onclick="
             result = result +'0';
             console.log(result);
-        ">0</button>
-        
-        <button class="butt" style="height: 20.35px; width: 22.35px;" onclick="
+        "
+      >
+        0
+      </button>
+
+      <button
+        class="butt"
+        style="height: 20.35px; width: 22.35px"
+        onclick="
             result = eval(result);
             console.log(result);
-        ">=</button>
-        
-        <button class="butt" style="height: 20.35px; width: 22.35px;"
+        "
+      >
+        =
+      </button>
+
+      <button
+        class="butt"
+        style="height: 20.35px; width: 22.35px"
         onclick="
             result = result +'/';
             console.log(result);
-        ">/</button>
+        "
+      >
+        /
+      </button>
     </div>
-    <div>
-        hello guys..
-        this is a basic calculator made by javascript...!
-    </div>
-  
+    <div>hello guys.. this is a basic calculator made by javascript...!</div>
 
     <script>
-        let result = '';
+      let result = "";
     </script>
-    
-</body>
+  </body>
 </html>
