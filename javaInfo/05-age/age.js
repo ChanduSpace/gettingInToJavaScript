@@ -11,3 +11,4 @@ function check() {
 console.log(a);
 
 check();
+console.log("happy");
