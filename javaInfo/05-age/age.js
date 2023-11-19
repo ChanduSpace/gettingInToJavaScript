@@ -13,3 +13,4 @@ console.log(a);
 check();
 console.log("happy");
 console.log("this is birth year");
+console.log("india lost");
