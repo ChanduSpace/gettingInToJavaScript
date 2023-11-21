@@ -14,3 +14,6 @@ check();
 console.log("happy");
 console.log("this is birth year");
 console.log("india lost");
+
+let j = document.querySelector(".chech");
+console.log(j);
