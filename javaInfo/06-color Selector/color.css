@@ -49,3 +49,8 @@ body {
   -ms-transition: all 0.2s;
   -o-transition: all 0.2s;
 }
+.border p {
+  font-family: sans-serif;
+  color: white;
+  font-weight: 700;
+}
