@@ -64,6 +64,7 @@
         color: white;
         border: none;
         cursor: pointer;
+        margin-bottom: 8px;
       }
 
       button:hover {
@@ -89,11 +90,15 @@
         JavaScript.
       </p>
       <button onclick="showAlert()">Click me!</button>
+      <button onclick="dont()">Don't Click me!</button>
     </section>
 
     <script>
       function showAlert() {
         alert("Hello! Thanks for clicking the button.");
+      }
+      function dont() {
+        alert("I said don't click!");
       }
     </script>
   </body>
