@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: rgb(39, 39, 39);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+      }
+      .apple {
+        height: 40vh;
+        width: 20vw;
+        background-color: darkgray;
+        box-shadow: 0 0 5px rgba(211, 211, 211, 0.535);
+        transition: all 0.8s ease-in-out;
+        transform-style: preserve-3d;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .apple:hover {
+        transform: rotateY(180deg);
+      }
+      .rohit-img {
+        position: absolute;
+        height: 37vh;
+        width: 18vw;
+        backface-visibility: hidden;
+        object-fit: cover;
+      }
+      .kane-img {
+        position: absolute;
+        height: 37vh;
+        width: 18vw;
+        transform: rotateY(180deg);
+        backface-visibility: hidden;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="apple">
+      <img src="../../rohit.jpg" class="rohit-img" alt="" />
+      <img src="../../kane.jpg" class="kane-img" alt="" />
+    </div>
+  </body>
+</html>
