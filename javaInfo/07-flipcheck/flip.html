@@ -15,6 +15,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 20px;
         height: 100vh;
         width: 100vw;
         perspective: 1000px;
@@ -49,12 +50,81 @@
         backface-visibility: hidden;
         object-fit: cover;
       }
+
+      /* cube styling */
+
+      .cube-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70vh;
+        width: 40vw;
+      }
+      .cube {
+        position: relative;
+        height: 60vh;
+        width: 30vw;
+        perspective: 500px;
+        transform-style: preserve-3d;
+        transition: all 30s;
+      }
+      .cube:hover {
+        /* transform: ; */
+        transform: rotateY(360deg) rotateZ(360deg) rotateX(360deg);
+        /* transform: ; */
+      }
+
+      .side {
+        height: 100px;
+        width: 100px;
+        opacity: 0.5;
+        position: absolute;
+        top: 21vh;
+        left: 23vh;
+        transform-style: preserve-3d;
+        border: 1px solid blue;
+      }
+      .front-side {
+        transform: translateZ(50px);
+        background-color: skyblue;
+      }
+      .back-side {
+        transform: translateZ(-50px);
+        background-color: pink;
+      }
+      .top-side {
+        transform: translateY(50px) rotateX(90deg);
+        background-color: orange;
+      }
+      .bottom-side {
+        transform: translateY(-50px) rotateX(90deg);
+        background-color: yellow;
+      }
+      .left-side {
+        transform: translateX(50px) rotateY(90deg);
+        background-color: lightgreen;
+      }
+      .right-side {
+        transform: translateX(-50px) rotateY(90deg);
+        background-color: bisque;
+      }
     </style>
   </head>
   <body>
     <div class="apple">
       <img src="../../rohit.jpg" class="rohit-img" alt="" />
       <img src="../../kane.jpg" class="kane-img" alt="" />
+    </div>
+
+    <div class="cube-container">
+      <div class="cube">
+        <div class="front-side side"></div>
+        <div class="back-side side"></div>
+        <div class="top-side side"></div>
+        <div class="bottom-side side"></div>
+        <div class="left-side side"></div>
+        <div class="right-side side"></div>
+      </div>
     </div>
   </body>
 </html>
