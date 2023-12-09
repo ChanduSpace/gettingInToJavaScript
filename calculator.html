@@ -10,12 +10,13 @@
       }
       .main-container {
         display: inline-block;
-        background-color: darkgrey;
+        background-color: rgb(149, 136, 115);
         padding: 20px;
         border-radius: 4px;
         justify-content: center;
         vertical-align: middle;
         align-items: center;
+        margin-bottom: 32px;
       }
       .heading {
         margin: 0px;
@@ -30,6 +31,15 @@
         border-radius: 4px;
         margin-bottom: 8px;
         text-align: right;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(rgb(40, 40, 40), rgb(82, 82, 82));
+        height: 90vh;
+        width: 100vw;
       }
     </style>
   </head>
@@ -213,7 +223,9 @@
         /
       </button>
     </div>
-    <div>hello guys.. this is a basic calculator made by javascript...!</div>
+    <div style="color: bisque">
+      hello guys.. this is a basic calculator made by javascript...!
+    </div>
 
     <script>
       let result = "";
