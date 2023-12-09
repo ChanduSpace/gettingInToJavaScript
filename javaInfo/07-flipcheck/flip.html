@@ -64,14 +64,12 @@
         position: relative;
         height: 60vh;
         width: 30vw;
-        perspective: 500px;
+        perspective: 1000px;
         transform-style: preserve-3d;
-        transition: all 30s;
+        transition: all 30s linear;
       }
       .cube:hover {
-        /* transform: ; */
         transform: rotateY(360deg) rotateZ(360deg) rotateX(360deg);
-        /* transform: ; */
       }
 
       .side {
@@ -82,7 +80,7 @@
         top: 21vh;
         left: 23vh;
         transform-style: preserve-3d;
-        border: 1px solid blue;
+        border-radius: 3px;
       }
       .front-side {
         transform: translateZ(50px);

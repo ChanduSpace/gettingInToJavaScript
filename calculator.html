@@ -21,15 +21,25 @@
         margin-left: 14px;
         margin-bottom: 4px;
       }
+      .display {
+        height: 18px;
+        width: 115px;
+        background-color: aliceblue;
+        padding: 8px;
+        border-radius: 4px;
+        margin-bottom: 8px;
+        text-align: right;
+      }
     </style>
   </head>
   <body style="padding: 30px">
     <div class="main-container">
-      <p class="heading">CALCULATOR</p>
+      <div class="display">000</div>
       <button
         class="butt"
         onclick="
             result = result + '1';
+            displayValue.innerText = result;
             console.log(result);
             "
       >
@@ -40,6 +50,7 @@
         class="butt"
         onclick="
             result = result +'2';
+            displayValue.innerText = result;
             console.log(result);
         "
       >
@@ -50,6 +61,7 @@
         class="butt"
         onclick="
             result = result +'3';
+            displayValue.innerText = result;
             console.log(result);
         "
       >
@@ -61,6 +73,7 @@
         style="height: 20.35px; width: 22.35px"
         onclick="
             result = result +' + ';
+            displayValue.innerText = result;
             console.log(result);"
       >
         +</button
@@ -70,6 +83,7 @@
         class="butt"
         onclick="
             result = result +'4';
+            displayValue.innerText = result;
             console.log(result);"
       >
         4
@@ -79,6 +93,7 @@
         class="butt"
         onclick="
             result = result +'5';
+            displayValue.innerText = result;
             console.log(result);"
       >
         5
@@ -88,6 +103,7 @@
         class="butt"
         onclick="
             result = result +'6';
+            displayValue.innerText = result;
             console.log(result);"
       >
         6
@@ -98,6 +114,7 @@
         style="height: 20.35px; width: 22.35px"
         onclick="
             result = result +'-';
+            displayValue.innerText = result;
             console.log(result);
         "
       >
@@ -108,6 +125,7 @@
         class="butt"
         onclick="
             result = result +'7';
+            displayValue.innerText = result;
             console.log(result);"
       >
         7
@@ -117,6 +135,7 @@
         class="butt"
         onclick="
             result = result +'8';
+            displayValue.innerText = result;
             console.log(result);
         "
       >
@@ -127,6 +146,7 @@
         class="butt"
         onclick="
             result = result +'9';
+            displayValue.innerText = result;
             console.log(result);
         "
       >
@@ -138,6 +158,7 @@
         style="height: 20.35px; width: 22.35px"
         onclick="
             result = result +'*';
+            displayValue.innerText = result;
             console.log(result);
         "
       >
@@ -149,6 +170,7 @@
         style="height: 20.35px; width: 22.35px"
         onclick="
             result = result +'.';
+            displayValue.innerText = result;
             console.log(result);
         "
       >
@@ -159,6 +181,7 @@
         class="butt"
         onclick="
             result = result +'0';
+            displayValue.innerText = result;
             console.log(result);
         "
       >
@@ -170,6 +193,7 @@
         style="height: 20.35px; width: 22.35px"
         onclick="
             result = eval(result);
+            displayValue.innerText = result;
             console.log(result);
         "
       >
@@ -181,6 +205,7 @@
         style="height: 20.35px; width: 22.35px"
         onclick="
             result = result +'/';
+            displayValue.innerText = result;
             console.log(result);
         "
       >
@@ -191,6 +216,7 @@
 
     <script>
       let result = "";
+      displayValue = document.querySelector(".display");
     </script>
   </body>
 </html>
