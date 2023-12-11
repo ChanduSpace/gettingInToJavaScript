@@ -40,6 +40,13 @@
         background: linear-gradient(rgb(40, 40, 40), rgb(82, 82, 82));
         height: 90vh;
         width: 100vw;
+        overflow-x: hidden;
+      }
+      .ac-butt {
+        width: 126px;
+        margin-left: 4px;
+        margin-top: 4px;
+        height: 20px;
       }
     </style>
   </head>
@@ -220,7 +227,15 @@
             console.log(result);
         "
       >
-        /
+        /</button
+      ><br />
+      <button
+        class="ac-butt"
+        onclick="
+            displayValue.innerText = ''; 
+        "
+      >
+        AC
       </button>
     </div>
     <div style="color: bisque">
